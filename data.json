@@ -1,1 +1,173 @@
-
+{
+  "name": "Hatta Ji",
+  "spouse": "Jadu Bai",
+  "children": [
+    { "name": "Nannu Bai" },
+    { "name": "Fundi Bai" },
+    { "name": "Teju Bai" },
+    { "name": "Heera Bai" },
+    { "name": "Dhanna Ji" },
+    {
+      "name": "Lakhma Ji",
+      "children": [
+        {
+          "name": "Omkar Ji",
+          "children": [
+            { "name": "Champa Bai" },
+            { "name": "Ghabbo Ji" },
+            { "name": "Bheema Ji" },
+            {
+              "name": "Ganpat Ji",
+              "spouse": "Rambha Bai",
+              "children": [
+                { "name": "Jhabu Bai" },
+                { "name": "Heera Bai" },
+                {
+                  "name": "Gangaram Ji",
+                  "children": [
+                    {
+                      "name": "Asaram Ji",
+                      "children": [
+                        { "name": "Madan Singh Ji" },
+                        { "name": "Kailash Singh Ji" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Soma Ji",
+                  "children": [
+                    { "name": "Pachu Bai" },
+                    {
+                      "name": "Ghanshyam Ji",
+                      "children": [
+                        {
+                          "name": "Surendra Singh Ji",
+                          "children": [
+                            { "name": "Bhupendra Singh Ji" },
+                            { "name": "Gayatri Bai" },
+                            { "name": "Kundan Singh Ji" },
+                            { "name": "Mahesh Singh Ji" }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Mohan Ji",
+                      "children": [
+                        {
+                          "name": "Narayan Singh Ji",
+                          "children": [
+                            { "name": "Virendra Singh Ji" },
+                            { "name": "Jayshree Bai" },
+                            { "name": "Rajeshree Bai" },
+                            { "name": "Raman Singh Ji" }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Jaswant Ji",
+                      "children": [
+                        { "name": "Chandrpal Singh Ji" },
+                        {
+                          "name": "Parmanand Singh Ji",
+                          "children": [
+                            { "name": "Priti Bai" },
+                            { "name": "Deepa Bai" },
+                            {
+                              "name": "Deepak Ji",
+                              "children": [
+                                { "name": "Divisha" },
+                                { "name": "Dhananjay Singh Ji" },
+                                { "name": "Pranjal" }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Jagdeesh Singh Ji",
+                      "children": [
+                        {
+                          "name": "Jitendra Singh Ji",
+                          "children": [
+                            { "name": "Kashish" },
+                            { "name": "Shakshi" },
+                            { "name": "Lav" }
+                          ]
+                        },
+                        { "name": "Manorama Bai" },
+                        { "name": "Durga Bai" },
+                        { "name": "Prema Bai" },
+                        { "name": "Rekha Bai" }
+                      ]
+                    },
+                    {
+                      "name": "Omprakash Ji",
+                      "children": [
+                        { "name": "Mahima Bai" },
+                        {
+                          "name": "Ravindra Singh Ji",
+                          "children": [
+                            { "name": "Ashirya" },
+                            { "name": "Bhavyansh Singh Ji" }
+                          ]
+                        },
+                        {
+                          "name": "Lokesh Singh Ji",
+                          "children": [
+                            { "name": "Devansh Singh Ji" }
+                          ]
+                        }
+                      ]
+                    },
+                    { "name": "Mani Bai" },
+                    { "name": "Ramkanya Bai" }
+                  ]
+                },
+                {
+                  "name": "Popsingh Ji",
+                  "children": [
+                    { "name": "Samandar Singh Ji" },
+                    { "name": "Indar Singh Ji" },
+                    {
+                      "name": "Chaturbhuj Singh Ji",
+                      "children": [
+                        { "name": "Arun Singh Ji" },
+                        { "name": "Sanjay Singh Ji" }
+                      ]
+                    },
+                    {
+                      "name": "Shivnarayan Singh Ji",
+                      "children": [
+                        { "name": "Ajay Singh Ji" },
+                        { "name": "Vijay Singh Ji" }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Tesingh Ji",
+                  "children": [
+                    { "name": "Bhagwan Singh Ji" },
+                    {
+                      "name": "Pritam Singh Ji",
+                      "children": [
+                        { "name": "Sachin Singh Ji" },
+                        { "name": "Meeena Bai" },
+                        { "name": "Bindu Bai" }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "name": "Pema Ji" }
+  ]
+}

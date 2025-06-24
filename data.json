@@ -1,165 +1,409 @@
 {
-  "name": "Hatta Ji",
-  "spouse": "Jadu Bai",
+  "name": "हट्टा जी",
+  "englishName": "Hatta Ji",
+  "spouse": "जादू बाई",
+  "dob": "",
+  "dod": "",
+  "gender": "M",
+  "image": null,
   "children": [
-    { "name": "Nannu Bai" },
-    { "name": "Fundi Bai" },
-    { "name": "Teju Bai" },
-    { "name": "Heera Bai" },
-    { "name": "Dhanna Ji" },
+    { "name": "नन्नू बाई", "englishName": "Nannu Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "फुंदी बाई", "englishName": "Phundi Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "तेजू बाई", "englishName": "Teju Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "हीरा बाई", "englishName": "Heera Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "धन्ना जी", "englishName": "Dhanna Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
     {
-      "name": "Lakhma Ji",
+      "name": "लखमा जी",
+      "englishName": "Lakhma Ji",
+      "spouse": "",
+      "dob": "",
+      "dod": "",
+      "gender": "M",
+      "image": null,
       "children": [
         {
-          "name": "Omkar Ji",
+          "name": "ओमकार जी",
+          "englishName": "Omkar Ji",
+          "spouse": "",
+          "dob": "",
+          "dod": "",
+          "gender": "M",
+          "image": null,
           "children": [
-            { "name": "Champa Bai" },
-            { "name": "Ghabbo Ji" },
-            { "name": "Bheema Ji" },
+            { "name": "चम्पा बाई", "englishName": "Champa Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+            { "name": "घब्बो जी", "englishName": "Ghabbo Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+            { "name": "भीमा जी", "englishName": "Bhima Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
             {
-              "name": "Ganpat Ji",
-              "spouse": "Rambha Bai",
+              "name": "गणपत जी",
+              "englishName": "Ganpat Ji",
+              "spouse": "रम्भा बाई",
+              "dob": "",
+              "dod": "",
+              "gender": "M",
+              "image": null,
               "children": [
-                { "name": "Jhabu Bai" },
-                { "name": "Heera Bai" },
+                { "name": "झाबू", "englishName": "Jhabu", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                { "name": "हीरा", "englishName": "Heera", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
                 {
-                  "name": "Gangaram Ji",
+                  "name": "गंगाराम जी",
+                  "englishName": "Gangaram Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
                   "children": [
                     {
-                      "name": "Asaram Ji",
+                      "name": "आसाराम जी",
+                      "englishName": "Asaram Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
                       "children": [
-                        { "name": "Madan Singh Ji" },
-                        { "name": "Kailash Singh Ji" }
+                        { "name": "मदन सिंह जी", "englishName": "Madan Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "कैलाश सिंह जी", "englishName": "Kailash Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
                       ]
                     }
                   ]
                 },
                 {
-                  "name": "Soma Ji",
+                  "name": "सोमा जी",
+                  "englishName": "Soma Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
                   "children": [
-                    { "name": "Pachu Bai" },
+                    { "name": "पचू बाई", "englishName": "Pachu Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
                     {
-                      "name": "Ghanshyam Ji",
+                      "name": "घनश्याम जी",
+                      "englishName": "Ghanshyam Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
                       "children": [
                         {
-                          "name": "Surendra Singh Ji",
+                          "name": "सुरेंद्र सिंह जी",
+                          "englishName": "Surendra Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
                           "children": [
-                            { "name": "Bhupendra Singh Ji" },
-                            { "name": "Gayatri Bai" },
-                            { "name": "Kundan Singh Ji" },
-                            { "name": "Mahesh Singh Ji" }
+                            { "name": "भूपेंद्र सिंह", "englishName": "Bhupendra Singh", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "गायत्री बाई", "englishName": "Gayatri Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "कुंदन सिंह जी", "englishName": "Kundan Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "महेंद्र सिंह जी", "englishName": "Mahendra Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
                           ]
                         }
                       ]
                     },
                     {
-                      "name": "Mohan Ji",
+                      "name": "मोहन जी",
+                      "englishName": "Mohan Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
                       "children": [
                         {
-                          "name": "Narayan Singh Ji",
+                          "name": "नारायण सिंह जी",
+                          "englishName": "Narayan Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
                           "children": [
-                            { "name": "Virendra Singh Ji" },
-                            { "name": "Jayshree Bai" },
-                            { "name": "Rajeshree Bai" },
-                            { "name": "Raman Singh Ji" }
+                            { "name": "वीरेंद्र सिंह जी", "englishName": "Virendra Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "जयश्री बाई", "englishName": "Jayshree Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "राजश्री बाई", "englishName": "Rajshree Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "रामन सिंह जी", "englishName": "Raman Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
                           ]
                         }
                       ]
                     },
                     {
-                      "name": "Jaswant Ji",
+                      "name": "जसवंत जी",
+                      "englishName": "Jaswant Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
                       "children": [
-                        { "name": "Chandrpal Singh Ji" },
+                        { "name": "चंद्रपाल सिंह जी", "englishName": "Chandrapal Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
                         {
-                          "name": "Parmanand Singh Ji",
+                          "name": "परमानंद सिंह जी",
+                          "englishName": "Parmanand Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
                           "children": [
-                            { "name": "Priti Bai" },
-                            { "name": "Deepa Bai" },
+                            { "name": "प्रीति बाई", "englishName": "Preeti Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "दीपा बाई", "englishName": "Deepa Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
                             {
-                              "name": "Deepak Ji",
+                              "name": "दीपक जी",
+                              "englishName": "Deepak Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
                               "children": [
-                                { "name": "Divisha" },
-                                { "name": "Dhananjay Singh Ji" },
-                                { "name": "Pranjal" }
+                                { "name": "दिविशा", "englishName": "Divisha", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "धनंजय सिंह जी", "englishName": "Dhananjay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                                { "name": "प्रांजल", "englishName": "Praanjal", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
                               ]
                             }
                           ]
+                        },
+                        {
+                          "name": "जगदीश सिंह जी",
+                          "englishName": "Jagdish Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            {
+                              "name": "जितेंद्र सिंह जी",
+                              "englishName": "Jitendra Singh Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "कशिश", "englishName": "Kashish", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "साक्षी", "englishName": "Sakshi", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "लव", "englishName": "Lav", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                              ]
+                            },
+                            { "name": "मनोरमा बाई", "englishName": "Manorama Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "दुर्गा बाई", "englishName": "Durga Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "प्रेमा बाई", "englishName": "Prema Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "रेखा बाई", "englishName": "Rekha Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                          ]
+                        },
+                        {
+                          "name": "ओमप्रकाश जी",
+                          "englishName": "Omprakash Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "महिमा बाई", "englishName": "Mahima Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            {
+                              "name": "रविंद्र सिंह जी",
+                              "englishName": "Ravindra Singh Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "आश्रिया", "englishName": "Ashriya", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "भव्यांश सिंह जी", "englishName": "Bhavyansh Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                              ]
+                            },
+                            {
+                              "name": "लोकेश सिंह जी",
+                              "englishName": "Lokesh Singh Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "देवांश सिंह जी", "englishName": "Devansh Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                              ]
+                            }
+                          ]
+                        },
+                        { "name": "मनी बाई", "englishName": "Mani Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                        { "name": "रामकन्या बाई", "englishName": "Ramkanya Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                      ]
+                    },
+                    {
+                      "name": "पोपसिंह जी",
+                      "englishName": "Popsingh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "समंदर सिंह जी", "englishName": "Samandar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "इंदर सिंह जी", "englishName": "Indar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        {
+                          "name": "चतुर्भुज सिंह जी",
+                          "englishName": "Chaturbhuj Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "अरुण सिंह जी", "englishName": "Arun Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "संजय सिंह जी", "englishName": "Sanjay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                          ]
+                        },
+                        {
+                          "name": "शिवनारायण सिंह जी",
+                          "englishName": "Shivnarayan Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "अजय सिंह जी", "englishName": "Ajay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "विजय सिंह जी", "englishName": "Vijay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                          ]
                         }
                       ]
                     },
                     {
-                      "name": "Jagdeesh Singh Ji",
+                      "name": "तेसिंह जी",
+                      "englishName": "Tesingh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
                       "children": [
+                        { "name": "भगवान सिंह जी", "englishName": "Bhagwan Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
                         {
-                          "name": "Jitendra Singh Ji",
+                          "name": "प्रीतम सिंह जी",
+                          "englishName": "Pritam Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
                           "children": [
-                            { "name": "Kashish" },
-                            { "name": "Shakshi" },
-                            { "name": "Lav" }
-                          ]
-                        },
-                        { "name": "Manorama Bai" },
-                        { "name": "Durga Bai" },
-                        { "name": "Prema Bai" },
-                        { "name": "Rekha Bai" }
-                      ]
-                    },
-                    {
-                      "name": "Omprakash Ji",
-                      "children": [
-                        { "name": "Mahima Bai" },
-                        {
-                          "name": "Ravindra Singh Ji",
-                          "children": [
-                            { "name": "Ashirya" },
-                            { "name": "Bhavyansh Singh Ji" }
-                          ]
-                        },
-                        {
-                          "name": "Lokesh Singh Ji",
-                          "children": [
-                            { "name": "Devansh Singh Ji" }
+                            { "name": "सचिन सिंह जी", "englishName": "Sachin Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "मीना बाई", "englishName": "Meena Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "बिंदु बाई", "englishName": "Bindu Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
                           ]
                         }
-                      ]
-                    },
-                    { "name": "Mani Bai" },
-                    { "name": "Ramkanya Bai" }
-                  ]
-                },
-                {
-                  "name": "Popsingh Ji",
-                  "children": [
-                    { "name": "Samandar Singh Ji" },
-                    { "name": "Indar Singh Ji" },
-                    {
-                      "name": "Chaturbhuj Singh Ji",
-                      "children": [
-                        { "name": "Arun Singh Ji" },
-                        { "name": "Sanjay Singh Ji" }
-                      ]
-                    },
-                    {
-                      "name": "Shivnarayan Singh Ji",
-                      "children": [
-                        { "name": "Ajay Singh Ji" },
-                        { "name": "Vijay Singh Ji" }
                       ]
                     }
                   ]
                 },
                 {
-                  "name": "Tesingh Ji",
+                  "name": "बीजे सिंह जी",
+                  "englishName": "BJ Singh Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
                   "children": [
-                    { "name": "Bhagwan Singh Ji" },
+                    { "name": "गोदावरी बाई", "englishName": "Godavari Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
                     {
-                      "name": "Pritam Singh Ji",
+                      "name": "बाबू सिंह जी",
+                      "englishName": "Babu Singh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
                       "children": [
-                        { "name": "Sachin Singh Ji" },
-                        { "name": "Meeena Bai" },
-                        { "name": "Bindu Bai" }
+                        { "name": "ईश्वर सिंह जी", "englishName": "Ishwar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "रघुवीर सिंह जी", "englishName": "Raghuvir Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "कन्हैया सिंह जी", "englishName": "Kanhaiya Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
                       ]
                     }
+                  ]
+                },
+                {
+                  "name": "तुलसीराम जी",
+                  "englishName": "Tulsiram Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    {
+                      "name": "बाबू सिंह जी",
+                      "englishName": "Babu Singh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "महेंद्र सिंह जी", "englishName": "Mahendra Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "हरी जी", "englishName": "Hari Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "लक्ष्मी बाई", "englishName": "Lakshmi Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                      ]
+                    },
+                    { "name": "छत्तर सिंह जी", "englishName": "Chhattar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                  ]
+                },
+                {
+                  "name": "छोगालाल जी",
+                  "englishName": "Chhogalal Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    {
+                      "name": "रामेश्वर जी",
+                      "englishName": "Rameshwar Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "संतोष", "englishName": "Santosh", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                      ]
+                    },
+                    {
+                      "name": "शेर सिंह जी",
+                      "englishName": "Sher Singh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "शंकर सिंह जी", "englishName": "Shankar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "बिसराम जी",
+                  "englishName": "Bisram Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    { "name": "केशर सिंह जी", "englishName": "Kesar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                    { "name": "रामरखु सिंह जी", "englishName": "Ramrakhu Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                    { "name": "प्रताप सिंह जी", "englishName": "Pratap Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                    { "name": "हुकुम सिंह जी", "englishName": "Hukum Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
                   ]
                 }
               ]
@@ -168,6 +412,6 @@
         }
       ]
     },
-    { "name": "Pema Ji" }
+    { "name": "पेमा जी", "englishName": "Pema Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
   ]
-}
+};

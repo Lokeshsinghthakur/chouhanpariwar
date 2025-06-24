@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <title>चौहान वंश वृक्ष</title>
+  <link rel="stylesheet" href="https://fperucic.github.io/treant-js/Treant.css" />
+  <style>
+    #tree-simple {
+      width: 100%;
+      height: 90vh;
+      overflow: auto;
+      border: 1px solid #ccc;
+      position: relative;
+    }
+    .node {
+      padding: 6px 10px;
+      border: 1px solid #777;
+      border-radius: 6px;
+      background: #fffef7;
+      font-size: 12px;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .node.highlighted {
+      border: 2px solid red;
+      background: #ffe0e0;
+    }
+    .node.adjacent {
+      border: 2px solid blue;
+      background: #e0f0ff;
+    }
+    #search-container {
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    #search-input {
+      padding: 5px;
+      font-size: 14px;
+      width: 200px;
+    }
+    #search-button, #reset-button {
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    #suggestions {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      background: white;
+      border: 1px solid #ccc;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 1000;
+      display: none;
+    }
+    .suggestion-item {
+      padding: 5px;
+      cursor: pointer;
+    }
+    .suggestion-item:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+<div id="search-container">
+  <input type="text" id="search-input" placeholder="नाम खोजें..." />
+  <div id="suggestions"></div>
+  <button id="search-button">खोजें</button>
+  <button id="reset-button">रीसेट</button>
+</div>
+<div id="tree-simple"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="https://fperucic.github.io/treant-js/Treant.js"></script>
+<script>
+const defaultMaleImg = "https://img.icons8.com/?size=100&id=GwYVu5UZRjBe&format=png&color=000000";
+const defaultFemaleImg = "https://img.icons8.com/?size=100&id=IlBlSvhW3h6Z&format=png&color=000000";
+
+// Counter for unique node IDs
+let nodeIdCounter = 0;
+
+const familyData = {
+  "name": "हट्टा जी",
+  "englishName": "Hatta Ji",
+  "spouse": "जादू बाई",
+  "dob": "",
+  "dod": "",
+  "gender": "M",
+  "image": null,
+  "children": [
+    { "name": "नन्नू बाई", "englishName": "Nannu Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "फुंदी बाई", "englishName": "Phundi Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "तेजू बाई", "englishName": "Teju Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "हीरा बाई", "englishName": "Heera Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+    { "name": "धन्ना जी", "englishName": "Dhanna Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+    {
+      "name": "लखमा जी",
+      "englishName": "Lakhma Ji",
+      "spouse": "",
+      "dob": "",
+      "dod": "",
+      "gender": "M",
+      "image": null,
+      "children": [
+        {
+          "name": "ओमकार जी",
+          "englishName": "Omkar Ji",
+          "spouse": "",
+          "dob": "",
+          "dod": "",
+          "gender": "M",
+          "image": null,
+          "children": [
+            { "name": "चम्पा बाई", "englishName": "Champa Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+            { "name": "घब्बो जी", "englishName": "Ghabbo Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+            { "name": "भीमा जी", "englishName": "Bhima Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+            {
+              "name": "गणपत जी",
+              "englishName": "Ganpat Ji",
+              "spouse": "रम्भा बाई",
+              "dob": "",
+              "dod": "",
+              "gender": "M",
+              "image": null,
+              "children": [
+                { "name": "झाबू", "englishName": "Jhabu", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                { "name": "हीरा", "englishName": "Heera", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                {
+                  "name": "गंगाराम जी",
+                  "englishName": "Gangaram Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    {
+                      "name": "आसाराम जी",
+                      "englishName": "Asaram Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "मदन सिंह जी", "englishName": "Madan Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "कैलाश सिंह जी", "englishName": "Kailash Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "सोमा जी",
+                  "englishName": "Soma Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    { "name": "पचू बाई", "englishName": "Pachu Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                    {
+                      "name": "घनश्याम जी",
+                      "englishName": "Ghanshyam Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        {
+                          "name": "सुरेंद्र सिंह जी",
+                          "englishName": "Surendra Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "भूपेंद्र सिंह", "englishName": "Bhupendra Singh", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "गायत्री बाई", "englishName": "Gayatri Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "कुंदन सिंह जी", "englishName": "Kundan Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "महेंद्र सिंह जी", "englishName": "Mahendra Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "मोहन जी",
+                      "englishName": "Mohan Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        {
+                          "name": "नारायण सिंह जी",
+                          "englishName": "Narayan Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "वीरेंद्र सिंह जी", "englishName": "Virendra Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "जयश्री बाई", "englishName": "Jayshree Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "राजश्री बाई", "englishName": "Rajshree Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "रामन सिंह जी", "englishName": "Raman Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "जसवंत जी",
+                      "englishName": "Jaswant Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "चंद्रपाल सिंह जी", "englishName": "Chandrapal Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        {
+                          "name": "परमानंद सिंह जी",
+                          "englishName": "Parmanand Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "प्रीति बाई", "englishName": "Preeti Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "दीपा बाई", "englishName": "Deepa Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            {
+                              "name": "दीपक जी",
+                              "englishName": "Deepak Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "दिविशा", "englishName": "Divisha", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "धनंजय सिंह जी", "englishName": "Dhananjay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                                { "name": "प्रांजल", "englishName": "Praanjal", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "जगदीश सिंह जी",
+                          "englishName": "Jagdish Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            {
+                              "name": "जितेंद्र सिंह जी",
+                              "englishName": "Jitendra Singh Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "कशिश", "englishName": "Kashish", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "साक्षी", "englishName": "Sakshi", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "लव", "englishName": "Lav", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                              ]
+                            },
+                            { "name": "मनोरमा बाई", "englishName": "Manorama Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "दुर्गा बाई", "englishName": "Durga Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "प्रेमा बाई", "englishName": "Prema Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "रेखा बाई", "englishName": "Rekha Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                          ]
+                        },
+                        {
+                          "name": "ओमप्रकाश जी",
+                          "englishName": "Omprakash Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "महिमा बाई", "englishName": "Mahima Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            {
+                              "name": "रविंद्र सिंह जी",
+                              "englishName": "Ravindra Singh Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "आश्रिया", "englishName": "Ashriya", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                                { "name": "भव्यांश सिंह जी", "englishName": "Bhavyansh Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                              ]
+                            },
+                            {
+                              "name": "लोकेश सिंह जी",
+                              "englishName": "Lokesh Singh Ji",
+                              "spouse": "",
+                              "dob": "",
+                              "dod": "",
+                              "gender": "M",
+                              "image": null,
+                              "children": [
+                                { "name": "देवांश सिंह जी", "englishName": "Devansh Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                              ]
+                            }
+                          ]
+                        },
+                        { "name": "मनी बाई", "englishName": "Mani Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                        { "name": "रामकन्या बाई", "englishName": "Ramkanya Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                      ]
+                    },
+                    {
+                      "name": "पोपसिंह जी",
+                      "englishName": "Popsingh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "समंदर सिंह जी", "englishName": "Samandar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "इंदर सिंह जी", "englishName": "Indar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        {
+                          "name": "चतुर्भुज सिंह जी",
+                          "englishName": "Chaturbhuj Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "अरुण सिंह जी", "englishName": "Arun Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "संजय सिंह जी", "englishName": "Sanjay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                          ]
+                        },
+                        {
+                          "name": "शिवनारायण सिंह जी",
+                          "englishName": "Shivnarayan Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "अजय सिंह जी", "englishName": "Ajay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "विजय सिंह जी", "englishName": "Vijay Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "तेसिंह जी",
+                      "englishName": "Tesingh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "भगवान सिंह जी", "englishName": "Bhagwan Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        {
+                          "name": "प्रीतम सिंह जी",
+                          "englishName": "Pritam Singh Ji",
+                          "spouse": "",
+                          "dob": "",
+                          "dod": "",
+                          "gender": "M",
+                          "image": null,
+                          "children": [
+                            { "name": "सचिन सिंह जी", "englishName": "Sachin Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                            { "name": "मीना बाई", "englishName": "Meena Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                            { "name": "बिंदु बाई", "englishName": "Bindu Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "बीजे सिंह जी",
+                  "englishName": "BJ Singh Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    { "name": "गोदावरी बाई", "englishName": "Godavari Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null },
+                    {
+                      "name": "बाबू सिंह जी",
+                      "englishName": "Babu Singh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "ईश्वर सिंह जी", "englishName": "Ishwar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "रघुवीर सिंह जी", "englishName": "Raghuvir Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "कन्हैया सिंह जी", "englishName": "Kanhaiya Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "तुलसीराम जी",
+                  "englishName": "Tulsiram Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    {
+                      "name": "बाबू सिंह जी",
+                      "englishName": "Babu Singh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "महेंद्र सिंह जी", "englishName": "Mahendra Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "हरी जी", "englishName": "Hari Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                        { "name": "लक्ष्मी बाई", "englishName": "Lakshmi Bai", "spouse": "", "dob": "", "dod": "", "gender": "F", "image": null }
+                      ]
+                    },
+                    { "name": "छत्तर सिंह जी", "englishName": "Chhattar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                  ]
+                },
+                {
+                  "name": "छोगालाल जी",
+                  "englishName": "Chhogalal Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    {
+                      "name": "रामेश्वर जी",
+                      "englishName": "Rameshwar Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "संतोष", "englishName": "Santosh", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                      ]
+                    },
+                    {
+                      "name": "शेर सिंह जी",
+                      "englishName": "Sher Singh Ji",
+                      "spouse": "",
+                      "dob": "",
+                      "dod": "",
+                      "gender": "M",
+                      "image": null,
+                      "children": [
+                        { "name": "शंकर सिंह जी", "englishName": "Shankar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "बिसराम जी",
+                  "englishName": "Bisram Ji",
+                  "spouse": "",
+                  "dob": "",
+                  "dod": "",
+                  "gender": "M",
+                  "image": null,
+                  "children": [
+                    { "name": "केशर सिंह जी", "englishName": "Kesar Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                    { "name": "रामरखु सिंह जी", "englishName": "Ramrakhu Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                    { "name": "प्रताप सिंह जी", "englishName": "Pratap Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null },
+                    { "name": "हुकुम सिंह जी", "englishName": "Hukum Singh Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    { "name": "पेमा जी", "englishName": "Pema Ji", "spouse": "", "dob": "", "dod": "", "gender": "M", "image": null }
+  ]
+};
+
+function convertToTreantNode(node) {
+  const displayName = node.name;
+  const genderText = node.gender === "F" ? "महिला" : "पुरुष";
+  const img = node.image || (node.gender === "F" ? defaultFemaleImg : defaultMaleImg);
+  const uniqueNodeId = `${displayName}-${nodeIdCounter++}`; // Ensure unique ID
+
+  // Build tooltip with all info
+  const tooltipParts = [
+    `नाम: ${displayName}`,
+    `English Name: ${node.englishName || 'N/A'}`,
+    node.spouse && `पति/पत्नी: ${node.spouse}`,
+    node.dob && `जन्म तिथि: ${node.dob}`,
+    node.dod && `मृत्यु तिथि: ${node.dod}`,
+    `लिंग: ${genderText}`
+  ].filter(Boolean).join("\n");
+
+  const treantNode = {
+    innerHTML: `<div style="display:flex; flex-direction:column; align-items:center; justify-content:center;" title="${tooltipParts}" data-node-id="${uniqueNodeId}">
+      <img src="${img}" alt="${displayName} photo" style="width:50px; height:50px; border-radius:50%;"/>
+      <div>${displayName}</div>
+    </div>`,
+    nodeId: uniqueNodeId // Unique identifier for search
+  };
+
+  if (node.children && node.children.length > 0) {
+    treantNode.children = node.children.map(convertToTreantNode);
+  }
+
+  return treantNode;
+}
+
+// Initialize tree with error handling
+try {
+  const config = {
+    chart: {
+      container: "#tree-simple",
+      levelSeparation: 100,
+      siblingSeparation: 30,
+      subTeeSeparation: 30,
+      rootOrientation: "SOUTH",
+      nodeAlign: "BOTTOM",
+      node: {
+        HTMLclass: "node"
+      }
+    },
+    nodeStructure: convertToTreantNode(familyData)
+  };
+
+  const chart = new Treant(config);
+} catch (error) {
+  console.error("Error initializing Treant chart:", error);
+  alert("वंश वृक्ष लोड करने में त्रुटि: " + error.message);
+}
+
+const container = document.getElementById("tree-simple");
+
+// Center father nodes on load
+function centerFatherNodes() {
+  try {
+    const fatherElements = Array.from(document.querySelectorAll('.node')).filter(node => {
+      const nodeId = node.getAttribute('data-node-id');
+      const nodeName = nodeId.split('-')[0];
+      return familyData.children.some(child => (child.name === nodeName || child.englishName === nodeName) && child.children);
+    });
+
+    if (fatherElements.length > 0) {
+      const rects = fatherElements.map(el => el.getBoundingClientRect());
+      const minX = Math.min(...rects.map(r => r.left));
+      const maxX = Math.max(...rects.map(r => r.right));
+      const minY = Math.min(...rects.map(r => r.top));
+      const maxY = Math.max(...rects.map(r => r.bottom));
+      const containerRect = container.getBoundingClientRect();
+
+      container.scrollLeft = (minX + maxX - containerRect.width) / 2 + container.scrollLeft;
+      container.scrollTop = minY - containerRect.top + container.scrollTop - 50;
+      console.log('Centered fathers:', { minX, maxX, minY, maxY, scrollLeft: container.scrollLeft, scrollTop: container.scrollTop });
+    } else {
+      console.warn("No father nodes found for centering.");
+    }
+  } catch (error) {
+    console.error("Error in centerFatherNodes:", error);
+  }
+}
+
+// Collect all names for suggestions
+function collectAllNames(data, names = []) {
+  names.push({ name: data.name, englishName: data.englishName || '' });
+  if (data.children) {
+    data.children.forEach(child => collectAllNames(child, names));
+  }
+  return names;
+}
+
+const allNames = collectAllNames(familyData);
+
+// Search function to find node by name or English name
+function findNodeByName(data, searchTerm) {
+  const searchLower = searchTerm.toLowerCase();
+  if (data.name.toLowerCase() === searchLower || (data.englishName && data.englishName.toLowerCase() === searchLower)) {
+    return data;
+  }
+  if (data.children) {
+    for (const child of data.children) {
+      const result = findNodeByName(child, searchTerm);
+      if (result) return result;
+    }
+  }
+  return null;
+}
+
+// Find adjacent nodes (parents, children, spouse)
+function findAdjacentNodes(data, targetNode, parent = null, adjacent = []) {
+  // Check if current node is the target
+  if (data === targetNode) {
+    // Add children
+    if (data.children) {
+      adjacent.push(...data.children);
+    }
+    // Add spouse if present
+    if (data.spouse) {
+      const spouseNode = findNodeByName(familyData, data.spouse);
+      if (spouseNode) adjacent.push(spouseNode);
+    }
+    // Add parent if available
+    if (parent) adjacent.push(parent);
+    return adjacent;
+  }
+  // Recurse through children
+  if (data.children) {
+    for (const child of data.children) {
+      findAdjacentNodes(child, targetNode, data, adjacent);
+    }
+  }
+  return adjacent;
+}
+
+function clearHighlights() {
+  document.querySelectorAll(".node.highlighted, .node.adjacent").forEach(node => {
+    node.classList.remove("highlighted", "adjacent");
+  });
+}
+
+// Search functionality
+function performSearch(searchName) {
+  if (!searchName) {
+    alert("कृपया एक नाम दर्ज करें!");
+    return;
+  }
+
+  clearHighlights();
+  const node = findNodeByName(familyData, searchName);
+  if (node) {
+    // Highlight the searched node
+    const nodeElements = Array.from(document.querySelectorAll(`[data-node-id^="${CSS.escape(node.name)}"], [data-node-id^="${CSS.escape(node.englishName || '')}"]`));
+    if (nodeElements.length > 0) {
+      nodeElements.forEach(el => el.classList.add("highlighted"));
+
+      // Highlight adjacent nodes
+      const adjacentNodes = findAdjacentNodes(familyData, node);
+      adjacentNodes.forEach(adjNode => {
+        const adjElements = Array.from(document.querySelectorAll(`[data-node-id^="${CSS.escape(adjNode.name)}"], [data-node-id^="${CSS.escape(adjNode.englishName || '')}"]`));
+        adjElements.forEach(el => el.classList.add("adjacent"));
+      });
+
+      // Scroll to the first matching node
+      const firstNodeElement = nodeElements[0];
+      firstNodeElement.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+
+      setTimeout(() => {
+        const rect = firstNodeElement.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+        if (rect.top < containerRect.top || rect.bottom > containerRect.bottom || rect.left < containerRect.left || rect.right > containerRect.right) {
+          container.scrollLeft = (rect.left - containerRect.left) + container.scrollLeft - containerRect.width / 2 + rect.width / 2;
+          container.scrollTop = (rect.top - containerRect.top) + container.scrollTop - containerRect.height / 2 + rect.height / 2;
+          console.log('Fallback scroll applied:', { scrollLeft: container.scrollLeft, scrollTop: container.scrollTop });
+        }
+      }, 500);
+      console.log(`Found node: ${searchName}, scrolled to element`, firstNodeElement);
+      console.log(`Highlighted adjacent nodes:`, adjacentNodes.map(n => n.name));
+    } else {
+      console.error(`Node element not found for: ${searchName}`);
+      alert("नाम मिला, लेकिन नोड दृश्यमान नहीं है!");
+    }
+  } else {
+    alert("नाम नहीं मिला!");
+  }
+}
+
+// Autocomplete suggestions
+const searchInput = document.getElementById("search-input");
+const suggestionsDiv = document.getElementById("suggestions");
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.trim().toLowerCase();
+  suggestionsDiv.innerHTML = "";
+  suggestionsDiv.style.display = "none";
+
+  if (query) {
+    const matches = allNames.filter(item => 
+      item.name.toLowerCase().includes(query) || 
+      (item.englishName && item.englishName.toLowerCase().includes(query))
+    ).slice(0, 5); // Limit to 5 suggestions
+
+    if (matches.length > 0) {
+      matches.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "suggestion-item";
+        div.textContent = `${item.name} (${item.englishName || 'N/A'})`;
+        div.addEventListener("click", () => {
+          searchInput.value = item.name;
+          suggestionsDiv.innerHTML = "";
+          suggestionsDiv.style.display = "none";
+          performSearch(item.name);
+        });
+        suggestionsDiv.appendChild(div);
+      });
+      suggestionsDiv.style.display = "block";
+    }
+  }
+});
+
+// Hide suggestions when clicking outside
+document.addEventListener("click", (e) => {
+  if (!searchInput.contains(e.target) && !suggestionsDiv.contains(e.target)) {
+    suggestionsDiv.style.display = "none";
+  }
+});
+
+// Search button event listener
+document.getElementById("search-button").addEventListener("click", () => {
+  const searchName = searchInput.value.trim();
+  performSearch(searchName);
+});
+
+// Reset button event listener
+document.getElementById("reset-button").addEventListener("click", () => {
+  clearHighlights();
+  searchInput.value = "";
+  suggestionsDiv.innerHTML = "";
+  suggestionsDiv.style.display = "none";
+  centerFatherNodes();
+});
+
+// Initialize view
+window.addEventListener("load", () => {
+  if (typeof Treant === "undefined") {
+    console.error("Treant.js failed to load.");
+    alert("वंश वृक्ष लोड करने में त्रुटि: Treant.js लोड नहीं हुआ।");
+  } else {
+    centerFatherNodes();
+  }
+});
+</script>
+</body>
+</html>

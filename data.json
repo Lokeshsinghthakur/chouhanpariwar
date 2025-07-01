@@ -107,6 +107,51 @@
                                           "image": null,
                                           "children": [
                                             {
+                                              "name": "beva जी",
+                                              "englishName": "beva Ji",
+                                              "spouse": "",
+                                              "dob": "",
+                                              "dod": "",
+                                              "gender": "M",
+                                              "image": null
+                                            },
+                                            {
+                                              "name": "दुधो जी",
+                                              "englishName": "Dudho Ji",
+                                              "spouse": "",
+                                              "dob": "",
+                                              "dod": "",
+                                              "gender": "M",
+                                              "image": null
+                                            },
+                                            {
+                                              "name": "बाली बाई",
+                                              "englishName": "Baali Bai",
+                                              "spouse": "",
+                                              "dob": "",
+                                              "dod": "",
+                                              "gender": "F",
+                                              "image": null
+                                            },
+                                            {
+                                              "name": "प्यार बाई",
+                                              "englishName": "Pyar Bai",
+                                              "spouse": "",
+                                              "dob": "",
+                                              "dod": "",
+                                              "gender": "F",
+                                              "image": null
+                                            },
+                                            {
+                                              "name": "हृदया जी",
+                                              "englishName": "Hridyaa Ji",
+                                              "spouse": "",
+                                              "dob": "",
+                                              "dod": "",
+                                              "gender": "M",
+                                              "image": null
+                                            },
+                                            {
                                               "name": "मान सिंह जी",
                                               "englishName": "Maan Singh Ji",
                                               "spouse": "तुलसी बाई",
@@ -125,8 +170,8 @@
                                                   "image": null,
                                                   "children": [
                                                     {
-                                                      "name": "बधा जी",
-                                                      "englishName": "Badhaa Ji",
+                                                      "name": "bagha जी",
+                                                      "englishName": "bagha Ji",
                                                       "spouse": "गुलेल बाई",
                                                       "dob": "",
                                                       "dod": "",
@@ -1315,8 +1360,8 @@
                                                                       ]
                                                                     },
                                                                     {
-                                                                      "name": "कालू सिंह जी",
-                                                                      "englishName": "Kalu Singh Ji",
+                                                                      "name": "kana सिंह जी",
+                                                                      "englishName": "kana Singh Ji",
                                                                       "spouse": "",
                                                                       "dob": "",
                                                                       "dod": "",
@@ -1331,30 +1376,12 @@
                                                                       "dod": "",
                                                                       "gender": "F",
                                                                       "image": null
-                                                                    },
-                                                                    {
-                                                                      "name": "नाथू सिंह जी",
-                                                                      "englishName": "Naathu Singh Ji",
-                                                                      "spouse": "",
-                                                                      "dob": "",
-                                                                      "dod": "",
-                                                                      "gender": "M",
-                                                                      "image": null
-                                                                    },
-                                                                    {
-                                                                      "name": "खीमा सिंह जी",
-                                                                      "englishName": "Kheema Singh Ji",
-                                                                      "spouse": "",
-                                                                      "dob": "",
-                                                                      "dod": "",
-                                                                      "gender": "M",
-                                                                      "image": null
                                                                     }
                                                                   ]
                                                                 },
                                                                 {
-                                                                  "name": "दुधा जी",
-                                                                  "englishName": "Dudha Ji",
+                                                                  "name": "kaalu जी",
+                                                                  "englishName": "kaalu Ji",
                                                                   "spouse": "",
                                                                   "dob": "",
                                                                   "dod": "",
@@ -1362,8 +1389,8 @@
                                                                   "image": null
                                                                 },
                                                                 {
-                                                                  "name": "भीमा जी",
-                                                                  "englishName": "Bhima Ji",
+                                                                  "name": "Bira bai",
+                                                                  "englishName": "Bira bai",
                                                                   "spouse": "",
                                                                   "dob": "",
                                                                   "dod": "",
@@ -1371,8 +1398,17 @@
                                                                   "image": null
                                                                 },
                                                                 {
-                                                                  "name": "हीरा जी",
-                                                                  "englishName": "Heera Ji",
+                                                                  "name": "khima जी",
+                                                                  "englishName": "khima Ji",
+                                                                  "spouse": "",
+                                                                  "dob": "",
+                                                                  "dod": "",
+                                                                  "gender": "M",
+                                                                  "image": null
+                                                                },
+                                                                {
+                                                                  "name": "Nathu जी",
+                                                                  "englishName": "Nathu Ji",
                                                                   "spouse": "",
                                                                   "dob": "",
                                                                   "dod": "",
@@ -1382,63 +1418,55 @@
                                                               ]
                                                             },
                                                             {
-                                                              "name": "सेजा बाई",
-                                                              "englishName": "Seja Bai",
+                                                              "name": "Bhima sing ji",
+                                                              "englishName": "Bhima sing ji",
                                                               "spouse": "",
                                                               "dob": "",
                                                               "dod": "",
-                                                              "gender": "F",
+                                                              "gender": "M",
                                                               "image": null
                                                             },
                                                             {
-                                                              "name": "बागा बाई",
-                                                              "englishName": "Baagha Bai",
+                                                              "name": "Heera sing ji",
+                                                              "englishName": "Heera sing ji",
                                                               "spouse": "",
                                                               "dob": "",
                                                               "dod": "",
-                                                              "gender": "F",
+                                                              "gender": "M",
                                                               "image": null
                                                             }
                                                           ]
                                                         },
                                                         {
-                                                          "name": "खीमा जी",
-                                                          "englishName": "Kheema Ji",
+                                                          "name": "Teja Bai",
+                                                          "englishName": "Teja bai",
                                                           "spouse": "",
                                                           "dob": "",
                                                           "dod": "",
-                                                          "gender": "M",
+                                                          "gender": "F",
+                                                          "image": null
+                                                        },
+                                                        {
+                                                          "name": "Amru Bai",
+                                                          "englishName": "Amru bai",
+                                                          "spouse": "",
+                                                          "dob": "",
+                                                          "dod": "",
+                                                          "gender": "F",
+                                                          "image": null
+                                                        },
+                                                        {
+                                                          "name": "Bagha Bai",
+                                                          "englishName": "Bagha bai",
+                                                          "spouse": "",
+                                                          "dob": "",
+                                                          "dod": "",
+                                                          "gender": "F",
                                                           "image": null
                                                         }
                                                       ]
                                                     },
-                                                    {
-                                                      "name": "गणेश जी",
-                                                      "englishName": "Ganesh Ji",
-                                                      "spouse": "",
-                                                      "dob": "",
-                                                      "dod": "",
-                                                      "gender": "M",
-                                                      "image": null
-                                                    },
-                                                    {
-                                                      "name": "पेमा जी",
-                                                      "englishName": "Pema Ji",
-                                                      "spouse": "",
-                                                      "dob": "",
-                                                      "dod": "",
-                                                      "gender": "M",
-                                                      "image": null
-                                                    },
-                                                    {
-                                                      "name": "भाल सिंह जी",
-                                                      "englishName": "Bhaal Singh Ji",
-                                                      "spouse": "",
-                                                      "dob": "",
-                                                      "dod": "",
-                                                      "gender": "M",
-                                                      "image": null
-                                                    },
+
                                                     {
                                                       "name": "माखन जी",
                                                       "englishName": "Makhan Ji",
@@ -1450,9 +1478,10 @@
                                                     }
                                                   ]
                                                 },
+
                                                 {
-                                                  "name": "हृदया जी",
-                                                  "englishName": "Hridyaa Ji",
+                                                  "name": "गणेश जी",
+                                                  "englishName": "Ganesh Ji",
                                                   "spouse": "",
                                                   "dob": "",
                                                   "dod": "",
@@ -1460,8 +1489,8 @@
                                                   "image": null
                                                 },
                                                 {
-                                                  "name": "देवो जी",
-                                                  "englishName": "Devo Ji",
+                                                  "name": "पेमा जी",
+                                                  "englishName": "Pema Ji",
                                                   "spouse": "",
                                                   "dob": "",
                                                   "dod": "",
@@ -1469,8 +1498,8 @@
                                                   "image": null
                                                 },
                                                 {
-                                                  "name": "दुधो जी",
-                                                  "englishName": "Dudho Ji",
+                                                  "name": "भाल सिंह जी",
+                                                  "englishName": "Bhaal Singh Ji",
                                                   "spouse": "",
                                                   "dob": "",
                                                   "dod": "",
@@ -1478,69 +1507,33 @@
                                                   "image": null
                                                 },
                                                 {
-                                                  "name": "बाली बाई",
-                                                  "englishName": "Baali Bai",
+                                                  "name": "lakhan singh ji",
+                                                  "englishName": "lakhan singh Ji",
                                                   "spouse": "",
                                                   "dob": "",
                                                   "dod": "",
-                                                  "gender": "F",
+                                                  "gender": "M",
                                                   "image": null
                                                 },
                                                 {
-                                                  "name": "प्यार बाई",
-                                                  "englishName": "Pyar Bai",
+                                                  "name": "bira bai",
+                                                  "englishName": "bira bai",
                                                   "spouse": "",
                                                   "dob": "",
                                                   "dod": "",
-                                                  "gender": "F",
+                                                  "gender": "M",
+                                                  "image": null
+                                                },
+                                                {
+                                                  "name": "sima bai",
+                                                  "englishName": "sima bai",
+                                                  "spouse": "",
+                                                  "dob": "",
+                                                  "dod": "",
+                                                  "gender": "M",
                                                   "image": null
                                                 }
                                               ]
-                                            },
-                                            {
-                                              "name": "खुबो जी",
-                                              "englishName": "Khubo Ji",
-                                              "spouse": "",
-                                              "dob": "",
-                                              "dod": "",
-                                              "gender": "M",
-                                              "image": null
-                                            },
-                                            {
-                                              "name": "खेटो जी",
-                                              "englishName": "Kheto Ji",
-                                              "spouse": "",
-                                              "dob": "",
-                                              "dod": "",
-                                              "gender": "M",
-                                              "image": null
-                                            },
-                                            {
-                                              "name": "कालू जी",
-                                              "englishName": "Kaalu Ji",
-                                              "spouse": "",
-                                              "dob": "",
-                                              "dod": "",
-                                              "gender": "M",
-                                              "image": null
-                                            },
-                                            {
-                                              "name": "माना बाई",
-                                              "englishName": "Manaa Bai",
-                                              "spouse": "",
-                                              "dob": "",
-                                              "dod": "",
-                                              "gender": "F",
-                                              "image": null
-                                            },
-                                            {
-                                              "name": "सरजू बाई",
-                                              "englishName": "Sarju Bai",
-                                              "spouse": "",
-                                              "dob": "",
-                                              "dod": "",
-                                              "gender": "F",
-                                              "image": null
                                             }
                                           ]
                                         }

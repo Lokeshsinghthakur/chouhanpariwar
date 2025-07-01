@@ -178,124 +178,6 @@
                                                                           "gender": "M",
                                                                           "image": null,
                                                                           "children": [
-                                                                                {
-                                                                                  "name": "नाना जी",
-                                                                                  "englishName": "Nana Ji",
-                                                                                  "spouse": "सुंदर बाई",
-                                                                                  "dob": "",
-                                                                                  "dod": "",
-                                                                                  "gender": "M",
-                                                                                  "image": null,
-                                                                                  "children": [
-                                                                                    {
-                                                                                      "name": "देव जी",
-                                                                                      "englishName": "Dev Ji",
-                                                                                      "spouse": "रूपा बाई",
-                                                                                      "dob": "",
-                                                                                      "dod": "",
-                                                                                      "gender": "M",
-                                                                                      "image": null,
-                                                                                      "children": [
-                                                                                        {
-                                                                                          "name": "मोती सिंह जी",
-                                                                                          "englishName": "Moti Singh Ji",
-                                                                                          "spouse": "रुख्मा बाई",
-                                                                                          "dob": "",
-                                                                                          "dod": "",
-                                                                                          "gender": "M",
-                                                                                          "image": null,
-                                                                                          "children": [
-                                                                                            {
-                                                                                              "name": "चम्पा बाई",
-                                                                                              "englishName": "Champa Bai",
-                                                                                              "spouse": "",
-                                                                                              "dob": "",
-                                                                                              "dod": "",
-                                                                                              "gender": "F",
-                                                                                              "image": null
-                                                                                            },
-                                                                                            {
-                                                                                              "name": "पुना जी",
-                                                                                              "englishName": "Puna Ji",
-                                                                                              "spouse": "चम्पा बाई",
-                                                                                              "dob": "",
-                                                                                              "dod": "",
-                                                                                              "gender": "M",
-                                                                                              "image": null,
-                                                                                              "children": [
-                                                                                                {
-                                                                                                  "name": "नंदी बाई",
-                                                                                                  "englishName": "Nandi Bai",
-                                                                                                  "spouse": "देवी सिंह जी",
-                                                                                                  "dob": "",
-                                                                                                  "dod": "",
-                                                                                                  "gender": "F",
-                                                                                                  "image": null
-                                                                                                },
-                                                                                                {
-                                                                                                  "name": "नरबदी बाई",
-                                                                                                  "englishName": "Narbadi Bai",
-                                                                                                  "spouse": "दयाराम जी",
-                                                                                                  "dob": "",
-                                                                                                  "dod": "",
-                                                                                                  "gender": "F",
-                                                                                                  "image": null
-                                                                                                },
-                                                                                                {
-                                                                                                  "name": "बेरा जी",
-                                                                                                  "englishName": "Bera Ji",
-                                                                                                  "spouse": "ग्यारसी बाई",
-                                                                                                  "dob": "",
-                                                                                                  "dod": "",
-                                                                                                  "gender": "M",
-                                                                                                  "image": null
-                                                                                                },
-                                                                                                {
-                                                                                                  "name": "रामचंद्र सिंह जी",
-                                                                                                  "englishName": "Ramchandr Singh Ji",
-                                                                                                  "spouse": "भूरी बाई",
-                                                                                                  "dob": "",
-                                                                                                  "dod": "",
-                                                                                                  "gender": "M",
-                                                                                                  "image": null,
-                                                                                                  "children": [
-                                                                                                    {
-                                                                                                      "name": "भंवर सिंह जी",
-                                                                                                      "englishName": "Bhavar Singh Ji",
-                                                                                                      "spouse": "",
-                                                                                                      "dob": "",
-                                                                                                      "dod": "",
-                                                                                                      "gender": "M",
-                                                                                                      "image": null
-                                                                                                    },
-                                                                                                    {
-                                                                                                      "name": "सुभद्रा बाई",
-                                                                                                      "englishName": "Subhadra Bai",
-                                                                                                      "spouse": "देवी सिंह जी",
-                                                                                                      "dob": "",
-                                                                                                      "dod": "",
-                                                                                                      "gender": "F",
-                                                                                                      "image": null
-                                                                                                    }
-                                                                                                  ]
-                                                                                                }
-                                                                                              ]
-                                                                                            }
-                                                                                          ]
-                                                                                        }
-                                                                                      ]
-                                                                                    },
-                                                                                    {
-                                                                                      "name": "नाथी बाई",
-                                                                                      "englishName": "Naathi Bai",
-                                                                                      "spouse": "",
-                                                                                      "dob": "",
-                                                                                      "dod": "",
-                                                                                      "gender": "F",
-                                                                                      "image": null
-                                                                                    }
-                                                                                  ]
-                                                                                },
                                                                             {
                                                                               "name": "हट्टा जी",
                                                                               "englishName": "Hatta Ji",
@@ -1222,7 +1104,124 @@
                                                                                     }
                                                                                   ]
                                                                                 },
-                                                                            
+                                                                                {
+                                                                                  "name": "नाना जी",
+                                                                                  "englishName": "Nana Ji",
+                                                                                  "spouse": "सुंदर बाई",
+                                                                                  "dob": "",
+                                                                                  "dod": "",
+                                                                                  "gender": "M",
+                                                                                  "image": null,
+                                                                                  "children": [
+                                                                                    {
+                                                                                      "name": "देव जी",
+                                                                                      "englishName": "Dev Ji",
+                                                                                      "spouse": "रूपा बाई",
+                                                                                      "dob": "",
+                                                                                      "dod": "",
+                                                                                      "gender": "M",
+                                                                                      "image": null,
+                                                                                      "children": [
+                                                                                        {
+                                                                                          "name": "मोती सिंह जी",
+                                                                                          "englishName": "Moti Singh Ji",
+                                                                                          "spouse": "रुख्मा बाई",
+                                                                                          "dob": "",
+                                                                                          "dod": "",
+                                                                                          "gender": "M",
+                                                                                          "image": null,
+                                                                                          "children": [
+                                                                                            {
+                                                                                              "name": "चम्पा बाई",
+                                                                                              "englishName": "Champa Bai",
+                                                                                              "spouse": "",
+                                                                                              "dob": "",
+                                                                                              "dod": "",
+                                                                                              "gender": "F",
+                                                                                              "image": null
+                                                                                            },
+                                                                                            {
+                                                                                              "name": "पुना जी",
+                                                                                              "englishName": "Puna Ji",
+                                                                                              "spouse": "चम्पा बाई",
+                                                                                              "dob": "",
+                                                                                              "dod": "",
+                                                                                              "gender": "M",
+                                                                                              "image": null,
+                                                                                              "children": [
+                                                                                                {
+                                                                                                  "name": "नंदी बाई",
+                                                                                                  "englishName": "Nandi Bai",
+                                                                                                  "spouse": "देवी सिंह जी",
+                                                                                                  "dob": "",
+                                                                                                  "dod": "",
+                                                                                                  "gender": "F",
+                                                                                                  "image": null
+                                                                                                },
+                                                                                                {
+                                                                                                  "name": "नरबदी बाई",
+                                                                                                  "englishName": "Narbadi Bai",
+                                                                                                  "spouse": "दयाराम जी",
+                                                                                                  "dob": "",
+                                                                                                  "dod": "",
+                                                                                                  "gender": "F",
+                                                                                                  "image": null
+                                                                                                },
+                                                                                                {
+                                                                                                  "name": "बेरा जी",
+                                                                                                  "englishName": "Bera Ji",
+                                                                                                  "spouse": "ग्यारसी बाई",
+                                                                                                  "dob": "",
+                                                                                                  "dod": "",
+                                                                                                  "gender": "M",
+                                                                                                  "image": null
+                                                                                                },
+                                                                                                {
+                                                                                                  "name": "रामचंद्र सिंह जी",
+                                                                                                  "englishName": "Ramchandr Singh Ji",
+                                                                                                  "spouse": "भूरी बाई",
+                                                                                                  "dob": "",
+                                                                                                  "dod": "",
+                                                                                                  "gender": "M",
+                                                                                                  "image": null,
+                                                                                                  "children": [
+                                                                                                    {
+                                                                                                      "name": "भंवर सिंह जी",
+                                                                                                      "englishName": "Bhavar Singh Ji",
+                                                                                                      "spouse": "",
+                                                                                                      "dob": "",
+                                                                                                      "dod": "",
+                                                                                                      "gender": "M",
+                                                                                                      "image": null
+                                                                                                    },
+                                                                                                    {
+                                                                                                      "name": "सुभद्रा बाई",
+                                                                                                      "englishName": "Subhadra Bai",
+                                                                                                      "spouse": "देवी सिंह जी",
+                                                                                                      "dob": "",
+                                                                                                      "dod": "",
+                                                                                                      "gender": "F",
+                                                                                                      "image": null
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "name": "नाथी बाई",
+                                                                                      "englishName": "Naathi Bai",
+                                                                                      "spouse": "",
+                                                                                      "dob": "",
+                                                                                      "dod": "",
+                                                                                      "gender": "F",
+                                                                                      "image": null
+                                                                                    }
+                                                                                  ]
+                                                                                }
                                                                               ]
                                                                             }
                                                                           ]

@@ -1149,24 +1149,7 @@
                                                                                               "gender": "M",
                                                                                               "image": null,
                                                                                               "children": [
-                                                                                                {
-                                                                                                  "name": "नंदी बाई",
-                                                                                                  "englishName": "Nandi Bai",
-                                                                                                  "spouse": "देवी सिंह जी",
-                                                                                                  "dob": "",
-                                                                                                  "dod": "",
-                                                                                                  "gender": "F",
-                                                                                                  "image": null
-                                                                                                },
-                                                                                                {
-                                                                                                  "name": "नरबदी बाई",
-                                                                                                  "englishName": "Narbadi Bai",
-                                                                                                  "spouse": "दयाराम जी",
-                                                                                                  "dob": "",
-                                                                                                  "dod": "",
-                                                                                                  "gender": "F",
-                                                                                                  "image": null
-                                                                                                },
+                                                                                     
                                                                                                 {
                                                                                                   "name": "बेरा जी",
                                                                                                   "englishName": "Bera Ji",
@@ -1202,7 +1185,24 @@
                                                                                                       "dod": "",
                                                                                                       "gender": "F",
                                                                                                       "image": null
-                                                                                                    }
+                                                                                                    },{
+                                                                                                  "name": "नंदी बाई",
+                                                                                                  "englishName": "Nandi Bai",
+                                                                                                  "spouse": "देवी सिंह जी",
+                                                                                                  "dob": "",
+                                                                                                  "dod": "",
+                                                                                                  "gender": "F",
+                                                                                                  "image": null
+                                                                                                },
+                                                                                                {
+                                                                                                  "name": "नरबदी बाई",
+                                                                                                  "englishName": "Narbadi Bai",
+                                                                                                  "spouse": "दयाराम जी",
+                                                                                                  "dob": "",
+                                                                                                  "dod": "",
+                                                                                                  "gender": "F",
+                                                                                                  "image": null
+                                                                                                },
                                                                                                   ]
                                                                                                 }
                                                                                               ]
